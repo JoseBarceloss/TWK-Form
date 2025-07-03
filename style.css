@@ -86,12 +86,17 @@
     height: 1000px;
     }
 
-    #img-04 {
-    left: 0;
-    top: 710px;
-    height: 450px;
-    z-index: 0;
+    #footer {
+    position: relative;
     width: 100%;
+    
+    }
+
+    #img-04 {
+    height: 550px;
+    z-index: 0;
+    width: 100%; 
+    height: 100%;
     }
 
      #img-element-02{
