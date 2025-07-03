@@ -87,7 +87,9 @@
     }
 
     #img-04 {
-    top: 610px;
+    position: absolute;
+    left: 0;
+    top: 710px;
     height: 450px;
     z-index: 1;
     width: 100%;
