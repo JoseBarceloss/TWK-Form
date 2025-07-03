@@ -87,17 +87,17 @@
     }
 
     #img-04 {
-    top: 630px;
-    height: 430px;
+    top: 610px;
+    height: 450px;
     z-index: 1;
     }
 
      #img-element-02{
-        animation: subirDescer-1 20s ease-in-out infinite;
+        animation: subirDescer-1 18s ease-in-out infinite;
      }
 
     #img-element-01 {
-        animation: subirDescer-2 20s ease-in-out infinite;
+        animation: subirDescer-2 18s ease-in-out infinite;
     }
     
     @keyframes subirDescer-1 {
