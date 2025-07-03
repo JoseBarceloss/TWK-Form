@@ -1,0 +1,204 @@
+    *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+
+    body {
+    background: url('./IMG/FUNDO.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    }
+
+    #Topo, #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 0px;
+    }
+
+    #img-01 {
+    height: 110px;
+    width: 220px;
+    }
+
+    #img-02 {
+    position: absolute;
+    top: 55px;
+    padding: 0px;
+    height: 220px;
+    width: 370px;
+    margin-top: 0px;
+    }
+
+    .form-label {
+    color: white;
+    margin-bottom: 4px;
+    margin-top: 5px;
+    }
+
+    .Form-separ {
+    display: flex;
+    }
+
+    .form-son {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: start;
+    }
+
+    #input-div-02 {
+    margin-left: 38px;
+    }
+
+    .label-1 {
+    margin-top: 10px;
+    }
+
+    .footer {
+    width: 100%;
+    }
+
+    #img-element-01, #img-element-02, #img-04 {
+    position: absolute;
+    left: 0;
+    padding: 0px;
+    width: 100%;
+    margin-top: 0px;
+    z-index: -1;
+    }
+
+    #img-element-01 {
+    top: 30px;
+    height: 1000px;
+    }
+
+    #img-element-02 {
+    top: 20px;
+    height: 1000px;
+    }
+
+    #img-04 {
+    top: 630px;
+    height: 430px;
+    z-index: 1;
+    }
+
+     #img-element-02{
+        animation: subirDescer-1 20s ease-in-out infinite;
+     }
+
+    #img-element-01 {
+        animation: subirDescer-2 20s ease-in-out infinite;
+    }
+    
+    @keyframes subirDescer-1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+ @keyframes subirDescer-2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+    
+    #form-twk {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 30px;
+        background-color: #83bedb83;
+        margin-top: 130px;
+        border-radius: 20px;
+        max-height: 400px;
+        
+    }
+
+    .form-input {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        height: 20px;
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    .input-lad {
+        background-color: rgb(249, 249, 249);
+        width: 131px;
+    }
+
+    .Btn {
+        margin-left: 0%;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        background-color: #6d8900;
+        padding: 13px 70px;
+        border-radius: 10px;
+        z-index: 2;
+        font-weight: bold;
+        
+    }
+
+    .checkout-box {
+        margin-top: 30px;
+        color: white;
+        z-index: 2;
+        letter-spacing: 1px;
+        max-width: 300px;
+    }
+
+    .form-dados { 
+        margin-top: 30px;
+        z-index: 2;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    input {
+      color: #070707;
+      padding: 0px 8px; 
+      font-size: 11px; 
+      font-weight: bold;
+    }
+
+/* === CÓDIGO CSS CORRIGIDO - SUBSTITUA O ANTERIOR POR ESTE === */
+
+.form-input {
+  transition: box-shadow 0.3s ease, outline 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.form-input.invalid {
+  outline: 2px solid #e74c3c; 
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+.checkout-box label {
+  transition: color 1.5s ease;
+}
+
+.checkout-box.invalid label {
+  color: #e74c3c;
+}
